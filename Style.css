@@ -1,0 +1,186 @@
+/* Global Style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1 {
+  font-size: 3.6rem;
+  /* font-size: 2.6rem; */
+}
+
+li,
+button,
+input,
+label,
+p {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 4.8rem;
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+h4,
+h5 {
+  font-size: 2.8rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+button {
+  padding: 2rem 6rem;
+  background: #4c6e97;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: background 0.5s ease-in-out; /*all = using transition to both font size and background*/
+  /* animation: cloudAnimation 2s infinite; */
+}
+
+button:hover {
+  background: #79889b;
+}
+/*-----------------------------------------------------------*/
+/* Nav Section wit HERO */
+
+.main-head {
+  background: #131c27;
+  color: white;
+}
+
+nav {
+  min-height: 10vh; /*in order to we minimize the screen not smaller than 10vh = 10% */
+  display: flex; /*becuase all content in the nav the header onely have one content that is nav but nav have h1 and ul and ul have li*/
+  width: 90%; /*we used (%) becuase work with intire Screen not relative the section or div */
+  margin: auto;
+  padding: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+nav ul {
+  display: flex;
+  flex: 1 1 40rem; /*= flex-grow = 1 , flex-shrink = 1 , flex-basis = 40rem*/
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+#logo {
+  flex: 3 1 40rem; /*= flex-grow = 3   , flex-shrink = 1 , flex-basis = 40rem*/
+  font-family: "Pattaya", sans-serif;
+  font-weight: normal;
+}
+
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url(icons/pexels-andrei-tanase-1271619.jpg);
+  min-height: 90vh; /*to show the div 90% of the screen*/
+  background-repeat: none; /*to not repeat image in the background...*/
+  background-position: center;
+  background-size: cover; /*to show the background like a cover in the back*/
+
+  color: white;
+  display: flex; /*before using any flex property we should change display to flex*/
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h3 {
+  padding: 5rem;
+}
+
+/*LOCATIONS SECTION*/
+#locations {
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url(icons/pexels-taryn-elliott-3889865.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  position: relative; /*Bo away hamu Elementakany (Realative) wabasta bn bam Sectionawa nak Screenaka.*/
+  overflow: hidden; /*Agar over flowy Shteky trr hata naw aw section yan diva awa dyar nabet*/
+}
+
+.locations-head {
+  width: 90%; /* using % to dispay relateive the Srceen Size not a div size*/
+  margin: auto;
+}
+
+.locations-head h2 {
+  padding: 1rem 0rem;
+  text-decoration: underline;
+  text-decoration-thickness: 0.5rem;
+}
+.locations-head h3 {
+  padding: 4rem 0rem;
+  /* background: linear-gradient(#131c27, #663b34);
+  background-clip: text;
+  -webkit-text-fill-color: transparent; */
+}
+.cloud {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.moving-cloud-1 {
+  animation: cloudAnimation 3s infinite alternate ease-in-out;
+}
+.moving-cloud-2 {
+  top: 20%;
+  z-index: -1; /*bo away layer bkayna zher layareky trr*/
+  opacity: 0.5;
+}
+
+@keyframes cloudAnimation {
+  from {
+    transform: translate(10%, -10%);
+  }
+  to {
+    transform: translate(0%, 0%);
+  }
+}
+
+@media screen and (max-width: 932px) {
+  html {
+    font-size: 45%;
+  }
+  nav {
+    text-align: center;
+  }
+  #logo {
+    padding: 1rem;
+  }
+  .cloud {
+    height: 40rem;
+  }
+  .moving-cloud-1 {
+    z-index: -1; /*Bo away la shashay bchuck hawrakan bkawna Psht nusinakanawa*/
+  }
+  .moving-cloud-2 {
+    z-index: -2;
+  }
+  .locations-head h3 {
+    background: rgba(19, 28, 39, 0.8);
+  }
+}
