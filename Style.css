@@ -64,6 +64,9 @@ button:hover {
 .main-head {
   background: #131c27;
   color: white;
+  position: sticky;
+  top: 0px;
+  z-index: 3;
 }
 
 nav {
@@ -90,7 +93,7 @@ nav ul {
 }
 
 .hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), transparent),
     url(icons/pexels-andrei-tanase-1271619.jpg);
   min-height: 90vh; /*to show the div 90% of the screen*/
   background-repeat: none; /*to not repeat image in the background...*/
@@ -112,7 +115,7 @@ nav ul {
 /*LOCATIONS SECTION ##################################################################################################*/
 #locations {
   min-height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), transparent),
     url(icons/pexels-taryn-elliott-3889865.jpg);
   background-position: center;
   background-size: cover;
@@ -142,6 +145,7 @@ nav ul {
   position: absolute;
   top: 0;
   right: 0;
+  opacity: 0.8;
 }
 .moving-cloud-1 {
   animation: cloudAnimation 3s infinite alternate ease-in-out;

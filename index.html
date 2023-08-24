@@ -53,7 +53,8 @@
         <img src="icons/cloud.png" class="moving-cloud-2 cloud" alt="cloud" />
       </header>
     </section>
-    <section class="benefits">
+
+    <section id="benefits">
       <header class="benefits-head">
         <h1>The perfect Travel</h1>
         <h3>
@@ -94,14 +95,14 @@
         <header class="form-head">
           <h2>Contact Us</h2>
         </header>
-        <form>
+        <form action="https://formspree.io/f/mvojawzd" method="POST">
           <div class="name-form">
             <label for="name">Name:</label>
-            <input type="text" name="name" required />
+            <input id="name" type="text" name="name" required />
           </div>
           <div class="email-form">
             <label for="email">Email:</label>
-            <input type="email" name="eamil" />
+            <input id="email" type="email" name="eamil" />
           </div>
           <button type="submit">Submit</button>
         </form>
@@ -112,13 +113,19 @@
         <h5>Travelly &copy;</h5>
         <ul>
           <li>
-            <a href="#"><img src="icons/twitter.png" alt="twitter"></a>
+            <a href="#" title="twitter"
+              ><img src="icons/twitter.png" alt="twitter"
+            /></a>
           </li>
           <li>
-            <a href="#"><img src="icons/youtube.png" alt="youtube"></a>
+            <a href="#" title="youtube"
+              ><img src="icons/youtube.png" alt="youtube"
+            /></a>
           </li>
           <li>
-            <a href="#"><img src="icons/instagram.png" alt="instagram"></a>
+            <a href="#" title="instagram"
+              ><img src="icons/instagram.png" alt="instagram"
+            /></a>
           </li>
         </ul>
       </div>
