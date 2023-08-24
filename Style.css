@@ -203,8 +203,48 @@ nav ul {
   margin: 2rem;
 }
 
-.card h4 , p {
+.card h4,
+.card p {
   padding: 3rem;
+}
+/*CONTACT US SECTION ######################################################################################################*/
+#contact {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url(icons/pexels-krish-chaitu-731423.jpg);
+  background-repeat: none;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-wrapper {
+  background-color: rgba(19, 28, 39, 0.8);
+  width: 60%;
+  border-radius: 20px;
+  color: white;
+}
+.form-head {
+  text-align: center;
+  padding: 4rem;
+}
+.name-form,
+.email-form {
+  padding: 2rem;
+  text-align: center;
+}
+.form-wrapper label {
+  padding: 0rem 2rem;
+}
+.form-wrapper button {
+  width: 100%;
+  padding: 2rem;
+  margin-top: 6em;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.form-wrapper input {
+  padding: 1rem 2rem;
 }
 /*MEDIA QUERY #############################################################################################################*/
 @media screen and (max-width: 932px) {
